@@ -84,7 +84,7 @@ static void TambahBuku()
 
     for (int i = 0; i < size(DaftarBuku); i++)
     {
-        if (DaftarBuku[i].ISBN == ISBN) {
+        if (DaftarBuku[i].ISBN == ISBN && !DaftarBuku[i].Dihapus) {
             FoundSameISBN = true;
         }
     }
